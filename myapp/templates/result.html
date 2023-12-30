@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <a href="{% url 'home' %}">home</a><br>
+        <a href="{% url 'about' %}">about</a><br>
+        <a href="{% url 'contact' %}">contact</a><br>
+        <h2>Result page</h2>
+        {% if result %}
+        Task id:{{result.id}}<br>
+        Task state:{{result.state}}<br>
+        Task status:{{result.status}}<br>
+        Result:{{result.result}}<br>
+        {% endif %}
+    </body>
+</html> 
